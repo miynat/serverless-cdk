@@ -9,7 +9,7 @@ setuptools.setup(
     name="csv_importer",
     version="0.0.1",
 
-    description="An empty CDK Python app",
+    description="CDK Python app for importing CSV files from S3 to DynamoDB",
     long_description=long_description,
     long_description_content_type="text/markdown",
 
@@ -20,6 +20,11 @@ setuptools.setup(
 
     install_requires=[
         "aws-cdk.core==1.125.0",
+        "aws-cdk.aws-s3==1.125.0",
+        "aws_cdk.aws_s3_notifications==1.125.0",
+        "aws-cdk.aws-lambda==1.125.0",
+        "aws-cdk.aws_dynamodb==1.125.0",
+        "boto3==1.18.53",
     ],
 
     python_requires=">=3.6",
